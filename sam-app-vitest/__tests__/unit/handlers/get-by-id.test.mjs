@@ -3,6 +3,7 @@ import { getByIdHandler } from '../../../src/handlers/get-by-id.mjs';
 // Import dynamodb from aws-sdk 
 import { DynamoDBDocumentClient, GetCommand } from '@aws-sdk/lib-dynamodb';
 import { mockClient } from "aws-sdk-client-mock";
+import { describe, beforeEach,it,expect } from 'vitest';
  
 // This includes all tests for getByIdHandler() 
 describe('Test getByIdHandler', () => { 
